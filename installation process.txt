@@ -1,3 +1,20 @@
 npm init -y
 npm install typescript
 tsc --init
+
+npm i --save-dev @types/cookie-session
+
+npm i cors helmet hpp cookie-session compression express-async-errors http-status-codes
+
+npm install -g nodemon
+
+npm i ts-node -D
+npm install --save-dev tsconfig-paths
+
+When setting up mongodb connection using mongoose, the mongoose connect method which takes in a database string is used.
+
+`mongoose.connect('mongodb://localhost:27017/<your-database-name>')`
+
+If you use a more recent version of mongoose and you get the error with mongodb connection, just change `localhost` to `127.0.0.1`.
+
+`mongoose.connect('mongodb://127.0.0.1:27017/<your-database-name>')`
